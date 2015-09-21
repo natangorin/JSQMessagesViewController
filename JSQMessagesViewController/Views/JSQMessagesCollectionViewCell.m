@@ -141,6 +141,8 @@ static NSMutableSet *jsqMessagesCollectionViewCellActions = nil;
     _cellTopLabel = nil;
     _messageBubbleTopLabel = nil;
     _cellBottomLabel = nil;
+    
+    _badgeImageView = nil;
 
     _textView = nil;
     _messageBubbleImageView = nil;
@@ -161,6 +163,8 @@ static NSMutableSet *jsqMessagesCollectionViewCellActions = nil;
     self.cellTopLabel.text = nil;
     self.messageBubbleTopLabel.text = nil;
     self.cellBottomLabel.text = nil;
+    
+    self.badgeImageView.image = nil;
 
     self.textView.dataDetectorTypes = UIDataDetectorTypeNone;
     self.textView.text = nil;

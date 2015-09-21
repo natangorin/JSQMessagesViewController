@@ -117,6 +117,9 @@
  */
 @property (weak, nonatomic, readonly) JSQMessagesCellTextView *textView;
 
+
+@property (weak, nonatomic, readonly) UIImageView *badgeImageView;
+
 /**
  *  Returns the bubble image view of the cell that is responsible for displaying message bubble images.
  *
