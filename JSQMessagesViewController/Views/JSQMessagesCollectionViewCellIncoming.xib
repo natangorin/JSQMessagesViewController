@@ -87,8 +87,12 @@
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F1E-8h-fkC">
-                        <rect key="frame" x="295" y="44" width="25" height="25"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="F1E-8h-fkC">
+                        <rect key="frame" x="290" y="45" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="XoZ-Oz-KhJ"/>
+                            <constraint firstAttribute="height" constant="25" id="yb5-tR-KpZ"/>
+                        </constraints>
                     </imageView>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -98,6 +102,8 @@
                 <constraint firstAttribute="trailing" secondItem="UPz-5x-c1T" secondAttribute="trailing" id="G3U-h0-DWS"/>
                 <constraint firstAttribute="trailing" secondItem="afj-rd-iNv" secondAttribute="trailing" id="Ka4-Dy-jCS"/>
                 <constraint firstItem="afj-rd-iNv" firstAttribute="leading" secondItem="4lh-CK-yVn" secondAttribute="leading" id="OnD-mZ-QtR"/>
+                <constraint firstItem="F1E-8h-fkC" firstAttribute="top" secondItem="Ufa-bF-l1Y" secondAttribute="bottom" constant="5" id="Tax-n1-Vb5"/>
+                <constraint firstAttribute="trailing" secondItem="F1E-8h-fkC" secondAttribute="trailing" constant="5" id="TfX-Q2-O4D"/>
                 <constraint firstItem="Ufa-bF-l1Y" firstAttribute="leading" secondItem="4lh-CK-yVn" secondAttribute="leading" id="Z5z-m3-8Ne"/>
                 <constraint firstItem="afj-rd-iNv" firstAttribute="top" secondItem="4lh-CK-yVn" secondAttribute="top" id="ZG9-2M-N52"/>
                 <constraint firstAttribute="trailing" secondItem="Ufa-bF-l1Y" secondAttribute="trailing" id="cWQ-1Q-xOA"/>
@@ -115,6 +121,7 @@
                 <outlet property="avatarContainerViewHeightConstraint" destination="tZk-AK-JFa" id="tPu-mC-ITh"/>
                 <outlet property="avatarContainerViewWidthConstraint" destination="YwX-fW-Me6" id="5PN-NL-hEP"/>
                 <outlet property="avatarImageView" destination="w23-sL-0Rh" id="Yf4-UR-VRC"/>
+                <outlet property="badgeImageView" destination="F1E-8h-fkC" id="Hou-HA-3Sg"/>
                 <outlet property="cellBottomLabel" destination="UPz-5x-c1T" id="MKm-hp-T6v"/>
                 <outlet property="cellBottomLabelHeightConstraint" destination="xPR-Ph-Ze9" id="nvV-Tk-AIs"/>
                 <outlet property="cellTopLabel" destination="afj-rd-iNv" id="bTd-4q-U7e"/>
